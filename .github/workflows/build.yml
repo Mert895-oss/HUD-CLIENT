@@ -16,10 +16,10 @@ jobs:
           gradle-version: 9.2.0
       - name: Build
         run: |
-          unzip -q hud-client-1.21.11.zip
+          unzip -q hud-client-v2.zip
           cd hud-client
           gradle build --no-daemon
       - uses: actions/upload-artifact@v4
         with:
           name: hud-client-jar
-          path: hud-client/build/libs/hud-client-1.0.0.jar
+          path: hud-client/build/libs/hud-client-2.0.0.jar
